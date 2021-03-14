@@ -36,7 +36,19 @@ def repeater(my_range, my_pow):
 class MyTest(TestCase):
     def test(self):
         self.assertEqual(repeater(10, 2), [0, 1, 4, 9, 16, 25, 36, 49, 64, 81])
+        self.assertIsInstance(repeater(10, 2), list)
 
 
 if __name__ == '__main__':
-    unittest.main()
+
+    my_string = 'Hello World!'
+    my_list = [1, 2, 3, 4, 5]
+    my_tuple = ('Hello', 'Python', 'Programmers')
+    my_int = 9
+
+    if my_int == 10:
+        print(True)
+    else:
+        raise Exception('This is not 10')
+
+
